@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>List</title>
+</head>
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">List</li>
+        </ol>
+      </nav> 
+
+    <div class="ab">
+        <h2>Don't forget to bring !</h2>
+
+        <form action="submit">
+            <label>Item:<input type="text"></label>
+            <br>
+            <label>Qty :<input type="number"></label>
+           
+            <label> msr :<select name="measure">
+                <option value="liter">Ltr</option>
+                <option value="liter">ml</option>
+                <option value="kilograme">Kg</option>
+                <option value="Gram">gm</option>
+                <option value="meter">cm</option>
+                <option value="packet">Pack</option>
+            </label> 
+           <label>on:<input type="radio"></label>
+           <br>
+           <label>Description :<input type="text"></label>
+           <br>
+           <input type="submit" value="Send Requst"> 
+        </form>
+
+    </div>
+</body>
+</html>
