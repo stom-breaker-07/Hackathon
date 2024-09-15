@@ -11,7 +11,24 @@
 
 .ab>div{
     border: solid,black,1px;
+    box-shadow: 1px 2px 5px rgb(12, 11, 11);
+    display: flex;
     border-radius: 5px;
     height: 70px;
     margin-bottom: 10px;
+    padding: 10px;
+}
+
+.ab>div>form{
+    display: flex;
+    margin-left: ;
+    padding: 10px;
+}
+
+.ab>div>form>input{
+    width: 50px;
+}  
+
+.ab>div>form>button{
+    margin-left: 50px;
 }
