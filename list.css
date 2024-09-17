@@ -6,6 +6,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    align-self: center;
+}
+
+.ab>form>input{
+   margin: 0 40%;
+   
 }
 body{
     background: linear-gradient( to right top ,rgb(94, 226, 94),rgba(255, 255, 255, 0.808),gold);
