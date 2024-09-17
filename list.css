@@ -1,44 +1,130 @@
+
 .ab{
-    margin-left: 10px;
-}
-.ab>h2{
     text-align: center;
     color: rgb(51, 71, 71);
     font-family:sans-serif  cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.ab>h6{
-    text-align: center;
-    color: rgb(51, 71, 71);
-    font-family:sans-serif  cursive;
-}
-.ab>h3{
-    margin-top: 40px;
+body{
+    background: linear-gradient( to right top ,rgb(94, 226, 94),rgba(255, 255, 255, 0.808),gold);
 }
 
-.ab>div{
-    border: solid,black,1px;
-    box-shadow: 1px 2px 5px rgb(12, 11, 11);
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
-    height: 70px;
-    margin-bottom: 10px;
-    padding: 10px;
-}
 
-.ab>div>form{
-    display: flex;
-    padding: 10px; 
-}
-
-.ab>div>form>input{
+input{
     width: 50px;
-}  
+}
+button{
+    width: 140px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 219, 24);
+}
+.b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding:  0 35px;
+    margin-bottom: 100px;
 
-.ab>div>form>button{
-    text-align: center;
-    color: aliceblue;
-    background-color: rgb(12, 209, 12);
-    margin-left: 50px;
 }
 
+.wrp{
+    max-width: 1150px;
+    width: 100%;
+    position: relative;
+}
+.wrp i{
+    height: 50px;
+    width: 50px;
+    background: rgb(95, 88, 87);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgb(104, 82, 82);
+}
+
+.wrp i:first-child{
+    left: -50px;
+}
+.wrp i:last-child{
+    right: -50px;
+}
+
+.wrp .crl{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 1px );
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+   scrollbar-width: 0;
+}
+
+.crl::-webkit-scrollbar{
+    display: none;
+}
+
+.crl :where(.card,.img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crl.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+
+.crl.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.crl .card{
+    scroll-snap-align: start;
+    height: 280px;
+    list-style: none;
+    background-color: beige;
+    cursor: pointer;
+    border-radius: 16px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card .img{
+    background: white;
+    width: 205px;
+    height: 175px;
+    border-radius: 30px
+
+
+}
+.card .img img{
+    width: 200px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 30px
+}
+
+@media screen and (max-width:900px){
+    .wrp .crl{
+        grid-auto-columns: calc((100% / 3) - 1px );  
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .wrp .crl{
+        grid-auto-columns:110%;
+    }
+}
