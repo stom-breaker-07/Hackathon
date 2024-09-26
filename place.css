@@ -1,0 +1,83 @@
+#a{
+    font-family:sans-serif  cursive;
+    background-color: #f0f1f3;
+}
+
+body>div{
+    margin-bottom: 20px;
+}
+
+.card-img-top{
+    width: 250px;
+    height: 200px;
+}
+.scroll{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 1px );
+    gap: 16px;
+    overflow-x: auto;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+
+.f :hover{
+    box-shadow: 0 3px 12px rgb(104, 82, 82);
+}
+
+.card-title{
+    pointer-events: none;
+}
+
+.carousel-caption{
+    pointer-events: none;   
+}
+
+@media screen and (min-width:900px){
+    .carousel-inner{
+        height: 600px;
+    }
+    
+}
+
+@media screen and (max-width:899px){
+    .carousel-inner{
+        height: 400px;
+        
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    .carousel-inner{
+        height: 300px;
+        
+    }
+    
+}
+
+@media screen and (max-width:900px){
+    .scroll{
+        grid-auto-columns: calc((100% / 2) - 1px ); 
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .scroll{
+        grid-auto-columns:50%;
+       
+    }
+}
+
+.foot{
+    border: solid 1px rgb(0, 0, 0);
+    align-content: center;
+    
+    font-family:sans-serif  cursive;
+    height: 200px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+}
