@@ -1,11 +1,13 @@
 #a{
     font-family:sans-serif  cursive;
-    background-color: #f0f1f3;
+    background: linear-gradient( to bottom top ,rgb(94, 140, 226),rgba(255, 255, 255, 0.808));
 }
 
 body>div{
     margin-bottom: 20px;
 }
+
+
 
 .card-img-top{
     width: 250px;
@@ -29,6 +31,20 @@ body>div{
 .card-title{
     pointer-events: none;
 }
+
+#ca{
+    background-color: rgba(255, 255, 0, 0.514);
+}
+#ro{
+    background-color: rgba(85, 51, 6, 0.623);
+}
+#ti{
+    background-color: rgba(0, 162, 255, 0.562);
+}
+#re{
+    background-color: rgba(222, 184, 135, 0.589);
+}
+
 
 .carousel-caption{
     pointer-events: none;   
@@ -74,10 +90,9 @@ body>div{
 .foot{
     border: solid 1px rgb(0, 0, 0);
     align-content: center;
-    
     font-family:sans-serif  cursive;
     height: 200px;
     margin: 0px;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.863);
 }
