@@ -1,6 +1,6 @@
 #a{
     font-family:sans-serif  cursive;
-    background: linear-gradient( to right top ,rgb(94, 140, 226),rgba(255, 255, 255, 0.808));
+    background: linear-gradient( to bottom top ,rgb(94, 140, 226),rgba(255, 255, 255, 0.808));
 }
 
 body>div{
@@ -13,6 +13,7 @@ body>div{
     width: 250px;
     height: 200px;
 }
+
 .scroll{
     display: grid;
     grid-auto-flow: column;
