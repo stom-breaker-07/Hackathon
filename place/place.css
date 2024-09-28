@@ -86,13 +86,3 @@ body>div{
        
     }
 }
-
-.foot{
-    border: solid 1px rgb(0, 0, 0);
-    align-content: center;
-    font-family:sans-serif  cursive;
-    height: 200px;
-    margin: 0px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.863);
-}
