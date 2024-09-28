@@ -3,11 +3,17 @@
     background: linear-gradient( to bottom top ,rgb(94, 140, 226),rgba(255, 255, 255, 0.808));
 }
 
-body>div{
-    margin-bottom: 20px;
+
+h2{
+    font-family:sans-serif  cursive;
+    color: rgba(0, 0, 255, 0.719);
 }
-
-
+.f{
+    width: 270px;
+}
+.f:hover{
+    box-shadow:  0 3px 12px rgb(0, 0, 0);
+}
 
 .card-img-top{
     width: 250px;
@@ -25,9 +31,7 @@ body>div{
     display: none;
 }
 
-.f :hover{
-    box-shadow: 0 3px 12px rgb(104, 82, 82);
-}
+
 
 .card-title{
     pointer-events: none;
@@ -51,29 +55,6 @@ body>div{
     pointer-events: none;   
 }
 
-@media screen and (min-width:900px){
-    .carousel-inner{
-        height: 600px;
-    }
-    
-}
-
-@media screen and (max-width:899px){
-    .carousel-inner{
-        height: 400px;
-        
-    }
-    
-}
-
-@media screen and (max-width:500px){
-    .carousel-inner{
-        height: 300px;
-        
-    }
-    
-}
-
 @media screen and (max-width:900px){
     .scroll{
         grid-auto-columns: calc((100% / 2) - 1px ); 
@@ -87,3 +68,5 @@ body>div{
        
     }
 }
+
+
